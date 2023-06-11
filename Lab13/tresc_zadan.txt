@@ -1,0 +1,16 @@
+Zadanie 1
+a) Zdefiniuj abstrakcyjną klasę Figura o polu długość, konstruktorze ustalającym długość na
+10, metodzie getDlugosc(), setDlugosc(int) i abstrakcyjnych metodach: informacja() i
+pole() oraz dziedziczace po niej klasy Kwadrat, Trojkat i Kolo.
+b) Przygotuj aplikację okienkową zawierającą 3 przyciski Klasy JRadioButton, JSlider i 2
+przyciski klasy JButton (Czysc i Rysuj).
+c) JRadioButton służa do wyboru koloru (czerwony, zielony, niebieski) JSlider do zmiany
+długości boku.
+d) Przy wyborze zielonego tworzony jest kwadrat, czerwonego- trójkąt i niebieskiego -
+okrąg. Po wciśnięciu przycisku (Button) tworzony j
+_________________________________________________________________________________________________________
+Zadanie 2
+Przygotuj aplikację, która na podstawie danych (wartości kursu waluty) wprowadzonych do
+pola tekstowego wygeneruje wykres liniowy. W aplikacji zamieść przyciski Rysuj, Czysc
+Uwzględnij wybór waluty np. USD, EURO. Wypisz walutę, dla które sporządzono wykres
+i średni kurs z podanej liczby dni.
