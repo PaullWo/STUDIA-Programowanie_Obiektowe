@@ -1,0 +1,63 @@
+Zadanie 1.
+Przedsiębiorstwo TAXI zatrudnia max 10 pracowników. Obsługuje mieszkańców miasta i okolicy.
+Realizuje przewozy pasażerów i przewóz towarów.
+Każdy pracownik:
+• ma: imię, nazwisko i nr identyfikacyjny;
+• jeździ autem osobowym lub ciężarowym określonej marki, identyfikowanym przez nr
+rejestracyjny;
+• realizuje zlecenie klienta przewozu z punktu A do punktu B.
+Auto osobowe ma określoną liczbą miejsc dla pasażerów, a auto ciężarowe może przewieźć
+towary o masie nie przekraczającej docelowej i dodatkowo może mieć innego pracownika.
+Klient ma:
+• imię, nazwisko i adres.
+Przejazd jest realizowany w określonym czasie na określonej trasie wg. stawek zależnych od
+strefy.
+Rejon działania firmy przewozowej podzielony jest na 2 strefy, w pierwszej dojazd do klienta jest
+bezpłatny, a przejazd jest wg niższych stawek (np. o 50% niższy niż w drugiej strefie).
+Przy zleceniach na przejazd osób obowiązuje cennik:
+• Opłata początkowa. (zł)8.
+• taryfa 1. 1 kilometr drogi. (zł) 3,0.
+• taryfa 2. 1 kilometr drogi. (zł) 4,5
+Przy zleceniach na taksówkę bagażową obowiązuje cennik:
+• Stawka za godzinę = 70 zł (czynna pomoc kierowcy)
+• Każda kolejna godzina jest naliczana minutowo,
+• Dodatkowy pomocnik = 35 zł
+W celu realizacji zadania zastosuj klasy abstrakcyjne/interfejsy. Składowe
+klas są prywatne.
+a) Przygotuj diagramu klas.
+b) Napisz aplikację, która umożliwi dodanie kilku pracowników, kilku samochodów i kilku
+klientów, którzy składają zlecenia przejazdu i otrzymują rachunek.
+c) Złóż zlecenia na przewóz pasażerów i zlecenia na przewóz towarów
+d) Oblicz koszt realizacji zlecenia
+Napisz aplikację, która umożliwi zapisanie danych w plikach obiektów i odczyt z pliku
+Uwzględnij obsługę wyjątków
+_________________________________________________________________________________________________________
+Zadanie 2.
+a) Przygotuj diagram klas, odpowiadający poniższym wymaganiom :
+• Na terenie miasta funkcjonuje piekarnia/cukiernia, która dostarcza swoje produkty (produkt
+ma nazwę i cenę) do sklepów spożywczych. Piekarnia ma swoją nazwę.
+• Towary sprzedawane są na sztuki lub na wagę
+• Każdy sklep identyfikowany jest przez nazwę i adres.
+Przykładowe zadania -
+Laboratorium 10
+2
+• Piekarnia zatrudnia kilkunastu dostawców (imię i nazwisko) odpowiedzialnych za
+dostarczanie różnych towarów do sklepów.
+• Każdy z dostawców ma przydzielony wydzielony obszar miasta (obszar ma nazwę), na
+który dostarcza towar.
+• Sklep może złożyć zamówienie na różne towary u dostawcy, który obsługuje dany obszar
+miasta, na którym funkcjonuje sklep.
+• W zamówieniu podane są informacje o ilości zamówionych towarów.
+b) Napisz aplikację która umożliwi:
+• Zdefiniowanie obszarów miasta (co najmniej 2)
+• Dodanie sklepu i przypisanie go do obszaru miasta (co najmniej 5 sklepów)
+• Dodanie dostawcy i przypisanie go do obszaru miasta (co najmniej 3 dostawców)
+• Dodanie różnych towarów jakie oferuje piekarnia
+• Złożenie zamówienia na różne towary
+• Wypisanie wartości zamówienia i informacji o towarach zamówienia dla wszystkich
+zamówień:
+▪ dla sklepu
+▪ dla dostawcy
+• Wypisanie informacji o zamówieniach wybranego dostawcy lub wybranego sklepu
+c) Napisz aplikację, która umożliwi zapisanie danych w plikach obiektów i odczyt z pliku.
+W celu realizacji zadania zastosuj klasy abstrakcyjne/interfejsy. Zastosuj obsługę wyjątków. 
