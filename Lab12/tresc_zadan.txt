@@ -1,0 +1,32 @@
+Zadanie 1.  
+Z wykorzystaniem biblioteki AWT/SWING napisz aplikację, która składa się z 
+•	okna (Frame),  
+•	pola tekstowego (TextField),  
+•	obiektu klasy Label  
+•	dwóch przycisków klasy Button (OK i Zamknij).  
+Zadaniem aplikacji jest wypisanie w obiekcie klasy Label (po kliknięciu na obiekcie OK klasy Button) liczby całkowitej wpisanej w obiekcie klasy TextField, gdy wprowadzono złe dane powinien być wyświetlany stosowny komunikat.  
+Kliknięcie na obiekcie Zamknij zamyka okno aplikacji. Zastosuj obsługę wyjątków.  
+________________________________________________________________________________________________
+Zadanie 2  
+Zdefiniuj klasę Osoba o polach 
+•	imie,  
+•	nazwisko,  
+•	wzrost ( w cm),  
+•	waga (w kg),  
+•	konstruktorze z argumentami  • 	i  metodach:  wagaNaFunkty (), WzrostNaCale().  
+•	Zmodyfikuj aplikację z zadania 1 tak by możliwe było wprowadzenie danych poszczególnych Osób przy zastosowaniu formularza zawierającego 4 obiekty klasy TextField, 3 przyciski klasy Button: PrzeliczWage, PrzeliczWzrost Zamknij i obiekty klasy Label.  
+•	Po wprowadzeniu danych do formularza powinien być tworzony obiekt klasy Osoba.  
+•	Po kliknięciu przycisku PrzeliczWage na formularzu powinna być wyświetlona Waga w funtach; a po kliknięciu na przycisku PrzeliczWzrost na formularzu powinnien być wyświetlony wzrost w calach.  
+•	Wciśnięcie Zamknij kończy wprowadzanie danych i zamknięcie aplikacji.  
+________________________________________________________________________________________________
+Zadanie 3  
+Zmodyfikuj aplikację z zadania 2 w ten sposób, że zastosujesz obiekt klasy JMenuBar z obiektami Plik i PrzeliczJednostki (klasy JMenu), które będą zawierały odpowiednio obiekty mizamknij oraz miwaga i miwzrost (klasy JmenuItem). 
+•	Oprogramuj wybór opcji zamknij - zamknięcie aplikacji; 
+•	PrzeliczWage //realizacja zadania kliknięcia na obiekcie klasy Button z zad2 
+•	PrzeliczWzrost ; //realizacja zadania kliknięcia na obiekcie klasy Button z zad2 
+________________________________________________________________________________________________
+Zadanie 4  
+Z wykorzystaniem biblioteki AWT/SWING napisz aplikację, która składa się z okna (JFrame), pola tekstowego (JTextField), etykiety (JLabel), listy (List) i przyciski (JButton): Wprowadz i Zamknij.  
+Wprowadzaj kolejno do obiektu klasy JTextField liczby całkowite.  
+Zadaniem aplikacji jest dopisanie w obiekcie klasy List (po kliknięciu na obiekcie klasy Button) liczb z obiektu JTextField większych od wygenerowanej losowo liczby całkowitej z przedziału  [-100,100].  
+W obiekcie JLabel wypisz wygenerowaną losowo liczbę. Zastosuj obsługę wyjątków.  
