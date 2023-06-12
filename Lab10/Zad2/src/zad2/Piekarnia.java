@@ -1,9 +1,10 @@
 package zad2;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Piekarnia {
+public class Piekarnia implements Serializable{
     private String nazwa;
     private List<Produkt> lista_produktow= new ArrayList<Produkt>();
     private List<Dostawca> lista_dostawcow= new ArrayList<Dostawca>();

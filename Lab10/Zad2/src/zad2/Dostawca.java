@@ -1,9 +1,10 @@
 package zad2;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Dostawca implements zamowienia{
+public class Dostawca implements zamowienia,Serializable{
     private String imie;
     private String nazwisko;
     private Obszar obszar;

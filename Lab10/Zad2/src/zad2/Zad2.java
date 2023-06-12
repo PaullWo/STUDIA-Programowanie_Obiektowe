@@ -1,5 +1,9 @@
 package zad2;
 
+import java.io.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 public class Zad2 {
     public static void main(String[] args) {
     //Dodawanie piekarni
@@ -35,6 +39,24 @@ public class Zad2 {
         sklepABC.utworzZamowienie();
         sklepBiedronka.utworzZamowienie();
         sklepHaval.utworzZamowienie();
+    //Plik obiektow
+        //Zapis do pliku
+        try{
+        System.out.println("===========================");
+        System.out.println("Odczyt i zapis do pliku: ");
+        ObjectOutputStream plik= new ObjectOutputStream(new FileOutputStream("plik.ser"));
+        plik.writeObject(sklepHaval);
+        plik.close();
+        //Odczyt z pliku
+        ObjectInputStream plik2= new ObjectInputStream( new FileInputStream("plik.ser"));
+        Sklep sklepHaval2=(Sklep)plik2.readObject();
+        sklepHaval2.opisZamowien();
+        plik2.close();
+        }catch(IOException e){
+            System.out.println("Błąd pliku!");
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(Zad2.class.getName()).log(Level.SEVERE, null, ex);
+        }
     //Opis zamowien
         sklepABC.opisZamowien();
         MaciejMlot.opisZamowien();

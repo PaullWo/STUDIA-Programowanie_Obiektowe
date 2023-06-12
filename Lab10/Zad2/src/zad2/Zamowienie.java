@@ -1,10 +1,11 @@
 package zad2;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Zamowienie {
+public class Zamowienie implements Serializable{
     private Dostawca dostawca;
     private Sklep sklep;
     private double koszt;

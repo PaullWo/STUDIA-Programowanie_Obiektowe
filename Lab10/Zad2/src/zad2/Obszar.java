@@ -1,6 +1,8 @@
 package zad2;
 
-public class Obszar {
+import java.io.Serializable;
+
+public class Obszar implements Serializable{
     private String nazwa;
     private Piekarnia piekarnia;
     

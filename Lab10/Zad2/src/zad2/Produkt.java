@@ -1,6 +1,8 @@
 package zad2;
 
-public class Produkt {
+import java.io.Serializable;
+
+public class Produkt implements Serializable{
     private String nazwa;
     private double cena;
     
