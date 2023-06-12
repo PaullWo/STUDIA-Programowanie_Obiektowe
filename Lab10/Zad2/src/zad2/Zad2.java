@@ -16,6 +16,9 @@ public class Zad2 {
         Obszar anielina=new Obszar("Anielina");
         Obszar centrum=new Obszar("Centrum");
         Obszar stojadla=new Obszar("Stojadla");
+        anielina.setPiekarnia(piekarniaABC);
+        centrum.setPiekarnia(piekarniaABC);
+        stojadla.setPiekarnia(piekarniaABC);
     //Dodawanie dostawcow
         Dostawca PiotrJez=new Dostawca("Piotr","Jez",centrum);
         Dostawca MaciejMlot=new Dostawca("Maciej","Mlot",stojadla);

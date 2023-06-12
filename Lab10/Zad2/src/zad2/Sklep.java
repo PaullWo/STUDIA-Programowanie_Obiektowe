@@ -7,7 +7,7 @@ public class Sklep {
     private String nazwa;
     private String adres;
     private Obszar obszar;
-    //private List<Zamowienia> lista_zamowien=new ArrayList<Zamowienia>();
+    private List<Zamowienie> lista_zamowien=new ArrayList<Zamowienie>();
     
     public Sklep(String nazwa,String adres,Obszar obszar){
         this.nazwa=nazwa;
@@ -30,4 +30,7 @@ public class Sklep {
         return "Sklep "+nazwa+" w "+adres+".";
     }
     //Obsluga zamowien
+    public void utworzZamowienie(){
+        
+    }
 }
