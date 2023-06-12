@@ -46,7 +46,7 @@ public class Zamowienie {
         }
     }
     public double getKoszt(){
-        return koszt;
+        return (Math.round(koszt*100.0)/100.0);
     }
     public void opisZamowienia(){
         System.out.println("Zamowienia dla sklepu "+sklep.opis());

@@ -3,12 +3,12 @@ package zad2;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Dostawca {
+public class Dostawca implements zamowienia{
     private String imie;
     private String nazwisko;
     private Obszar obszar;
     private Piekarnia piekarnia;
-    //private List<Zamowienia> lista_zamowien=new ArrayList<Zamowienia>();
+    private List<Zamowienie> lista_zamowien=new ArrayList<Zamowienie>();
     
     public Dostawca(String imie,String nazwisko,Obszar obszar){
         this.imie=imie;
@@ -37,4 +37,16 @@ public class Dostawca {
         return "Dostawca "+imie+" "+nazwisko+", podlegajacy obszar: "+getObszar().getNazwa()+".";
     }
     //Obsluga zamowien
+    public void dodajZamowienie(Zamowienie zamowienie){
+        lista_zamowien.add(zamowienie);
+    }
+    @Override
+    public void opisZamowien(){
+        System.out.println("Zamowienia u "+opis());
+        for(Zamowienie zamowienie: lista_zamowien){
+            zamowienie.opisZamowienia();
+            System.out.println("==================");
+        }
+    }
+    
 }

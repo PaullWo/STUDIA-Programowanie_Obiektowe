@@ -24,6 +24,9 @@ public class Piekarnia {
     public Produkt zwrocProduktIndex(int index){
         return lista_produktow.get(index);
     }
+    public int iloscProduktow(){
+        return lista_produktow.size();
+    }
     public void opisProdukty(){
         System.out.println(opis()+" Lista produktow: ");
         for(Produkt produkt: lista_produktow){
@@ -43,6 +46,13 @@ public class Piekarnia {
     }
     public Dostawca zwrocDostawcaIndex(int index){
         return lista_dostawcow.get(index);
+    }
+    public Dostawca zwrocDostawcaObszar(Obszar obszar){
+        Dostawca szukany_dostawca=null;
+        for(Dostawca dostawca: lista_dostawcow){
+            if(dostawca.getObszar()==obszar)  szukany_dostawca=dostawca;
+        }
+        return szukany_dostawca;
     }
     public void opisDostawcy(){
         System.out.println(opis()+" Lista dostawcow: ");
