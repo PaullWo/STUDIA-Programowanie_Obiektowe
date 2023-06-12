@@ -20,16 +20,19 @@ public class Zad2 {
         Dostawca PiotrJez=new Dostawca("Piotr","Jez",centrum);
         Dostawca MaciejMlot=new Dostawca("Maciej","Mlot",stojadla);
         Dostawca MateuszGruz=new Dostawca("Mateusz","Gruz",anielina);
-        Dostawca DawidLos=new Dostawca("Dawid","Los",anielina);
         piekarniaABC.dodajDostawce(PiotrJez);
         piekarniaABC.dodajDostawce(MateuszGruz);
         piekarniaABC.dodajDostawce(MaciejMlot);
-        piekarniaABC.dodajDostawce(DawidLos);
+    //Dodawanie sklepow
+        Sklep sklepABC=new Sklep("ABC","Minsk Mazowiecki,ul. Warszawska 123",stojadla);
+        Sklep sklepBiedronka=new Sklep("Biedronka","Minsk Mazowiecki,ul. Warszawska 40",centrum);
+        Sklep sklepZabka=new Sklep("Zabka","Minsk Mazowiecki,ul. Wesola 99",anielina);
+        Sklep sklepHaval=new Sklep("Haval","Minsk Mazowiecki,ul. Budowlana 10",centrum);
     //Opisy
         piekarniaABC.opisProdukty();
         piekarniaABC.opisDostawcy();
         System.out.println(MaciejMlot.opis()+" dla piekarni "+MaciejMlot.getPiekarnia().getNazwa());
-        
+        System.out.println(sklepBiedronka.opis());
     }
     
 }

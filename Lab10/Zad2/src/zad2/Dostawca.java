@@ -31,8 +31,7 @@ public class Dostawca {
         return piekarnia;
     }
     public boolean sprawdzObszar(Obszar obszar){
-        if(this.obszar==obszar) return true;
-        return false;
+        return this.obszar==obszar;
     }
     public String opis(){
         return "Dostawca "+imie+" "+nazwisko+", podlegajacy obszar: "+getObszar().getNazwa()+".";
