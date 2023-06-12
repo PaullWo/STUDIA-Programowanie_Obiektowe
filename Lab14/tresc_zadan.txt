@@ -1,0 +1,23 @@
+Zadanie 1.  
+a)	Zdefiniuj abstrakcyjną klasę Osoba o:
+•	prywatnych polach imie, nazwisko, miejscowość, 
+• konstruktorach bez argumentów i z argumentami, 
+•	metody zwracające odpowiednio: imie, nazwisko, miejscowość 
+•	abstrakcyjne metody: info() -zwracająca wynik typu String i metodę oblicz() -zwracająca wynik typu double . 
+b)	Zdefiniuj klasę Student dziedziczącą po klasie Osoba o dodatkowych polach: Uczelnia, kierunek, tablica ocen z egzaminu (max 5). 
+Zdefiniuj konstruktory i metody info() - zwraca tekst : Student kierunku ; oblicz() – oblicza średnią z ocen. 
+c)	Zdefiniuj klasę Pracownik dziedziczącą po Osoba o dodatkowych polach: 
+•	firma, 
+•	stanowisko, 
+•	pobory_brutto, 
+•	ukończone_kursy (max 5). 
+Zdefiniuj konstruktory i metody info() - zwraca tekst: " Pracownik na stanowisku ukończył kursy .; oblicz() – wypłatę (pobory_brutto - 19% .podatku), podatek liczony od poborów brutto. Zdefiniuj klasę Okno zawierającą 
+ 
+Zastosuj dla podania miejscowości obiekt JComboBox a dla wyboru student/pracownik JRadioButton. 
+Po wpisaniu danych do formularza, wybraniu student/pracownik. zgłasza się okienko do wprowadzenia dodatkowych danych pracownika lub studenta.
+
+d) Na podstawie danych osobowych i danych studenta/pracownika tworzony jest obiekt klasy student, wywoływana jest metoda info() i oblicz(), a wyniki prezentowane w oknie dialogowym. 
+Zapisz – zapisuje wyniki z info() i oblicz() do pliku, w jednym wierszu dane jednej osoby.
+
+Uwzględnij przypadki mniejszej liczby egzaminów studenta (średnia liczona z liczby ocen wprowadzonych w okienku) lub mniejszej liczby kursów pracownika. 
+Zastosuj odpowiednie rozmieszczenie (Layout) obiektów, tak by   był on czytelny.
