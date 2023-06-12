@@ -28,11 +28,18 @@ public class Zad2 {
         Sklep sklepBiedronka=new Sklep("Biedronka","Minsk Mazowiecki,ul. Warszawska 40",centrum);
         Sklep sklepZabka=new Sklep("Zabka","Minsk Mazowiecki,ul. Wesola 99",anielina);
         Sklep sklepHaval=new Sklep("Haval","Minsk Mazowiecki,ul. Budowlana 10",centrum);
-    //Opisy
+    /*Opisy
         piekarniaABC.opisProdukty();
         piekarniaABC.opisDostawcy();
         System.out.println(MaciejMlot.opis()+" dla piekarni "+MaciejMlot.getPiekarnia().getNazwa());
         System.out.println(sklepBiedronka.opis());
+    */
+    //Test zamowienia
+        Zamowienie test=new Zamowienie(MaciejMlot,sklepABC);
+        test.opisZamowienia();
+        test.dodajProdukt(bagieta);
+        test.dodajProdukt(bulka);
+        test.opisZamowienia();
     }
     
 }
