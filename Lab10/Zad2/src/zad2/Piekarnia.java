@@ -6,13 +6,15 @@ import java.util.List;
 public class Piekarnia {
     private String nazwa;
     private List<Produkt> lista_produktow= new ArrayList<Produkt>();
-    //private List<Dostawca> lista_dostawcow= new ArrayList<Dostawca>();
+    private List<Dostawca> lista_dostawcow= new ArrayList<Dostawca>();
+    
     public Piekarnia(String nazwa){
         this.nazwa=nazwa;
     }
     public String getNazwa(){
         return nazwa;
     }
+    //Obsluga produktow
     public void dodajProdukt(Produkt produkt){
         lista_produktow.add(produkt);
     }
@@ -32,4 +34,20 @@ public class Piekarnia {
         return "Piekarnia "+nazwa+".";
     }
     //Obsluga dostawcow
+    public void dodajDostawce(Dostawca dostawca){
+        lista_dostawcow.add(dostawca);
+        lista_dostawcow.get(lista_dostawcow.size()-1).setPiekarnia(this);
+    }
+    public void usunDostawcaIndex(int index){
+        lista_dostawcow.remove(index);
+    }
+    public Dostawca zwrocDostawcaIndex(int index){
+        return lista_dostawcow.get(index);
+    }
+    public void opisDostawcy(){
+        System.out.println(opis()+" Lista dostawcow: ");
+        for(Dostawca dostawca: lista_dostawcow){
+            System.out.println(dostawca.opis());
+        }
+    }
 }
